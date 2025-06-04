@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_3" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirebasePhoneloginViewController" customModule="socialintegration" customModuleProvider="target">
+            <connections>
+                <outlet property="phonenumbertextfeild" destination="ZAE-Sp-Fk3" id="GFq-r3-TH1"/>
+                <outlet property="signinbt" destination="adf-I0-rVE" id="XsY-iV-jb0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LLC-vl-nmv">
+                    <rect key="frame" x="0.0" y="62" width="402" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FireBase Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BaW-Hc-GFe">
+                            <rect key="frame" x="110" y="15" width="182" height="24"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9PN-z6-pUo">
+                            <rect key="frame" x="20" y="7" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="PgO-Cr-CW1"/>
+                                <constraint firstAttribute="width" constant="40" id="pjP-V4-otr"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="backbtn"/>
+                            <connections>
+                                <action selector="backbtclicked:" destination="-1" eventType="touchUpInside" id="PR6-Pb-KyJ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="BaW-Hc-GFe" firstAttribute="centerY" secondItem="9PN-z6-pUo" secondAttribute="centerY" id="MSF-s1-jMv"/>
+                        <constraint firstItem="BaW-Hc-GFe" firstAttribute="top" secondItem="LLC-vl-nmv" secondAttribute="top" constant="15" id="QJ9-A9-ZQb"/>
+                        <constraint firstAttribute="trailing" secondItem="BaW-Hc-GFe" secondAttribute="trailing" constant="110" id="UAa-s6-q4y"/>
+                        <constraint firstItem="9PN-z6-pUo" firstAttribute="leading" secondItem="LLC-vl-nmv" secondAttribute="leading" constant="20" id="huX-R1-Ug5"/>
+                        <constraint firstItem="BaW-Hc-GFe" firstAttribute="leading" secondItem="LLC-vl-nmv" secondAttribute="leading" constant="110" id="m2w-Tu-6IB"/>
+                        <constraint firstAttribute="height" constant="50" id="rAJ-E0-Szs"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YeJ-zU-iAb">
+                    <rect key="frame" x="20" y="142" width="382" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter Your Phone Number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUO-P2-hms">
+                            <rect key="frame" x="10" y="15.666666666666686" width="382" height="19.333333333333329"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Ww2-Ww-7OZ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ISY-Be-Owe">
+                    <rect key="frame" x="20" y="192" width="382" height="40"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter valid phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZAE-Sp-Fk3">
+                            <rect key="frame" x="10" y="0.0" width="355" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="VIM-Jl-XZf"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XsH-kM-Rdg">
+                    <rect key="frame" x="0.0" y="262" width="402" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adf-I0-rVE">
+                            <rect key="frame" x="171" y="5" width="60" height="30"/>
+                            <color key="backgroundColor" systemColor="linkColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="iHk-8D-mQu"/>
+                                <constraint firstAttribute="height" constant="30" id="z4L-KN-fbH"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Signin">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="signinbtclicked:" destination="-1" eventType="touchUpInside" id="Kj6-lw-d7T"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="adf-I0-rVE" firstAttribute="centerY" secondItem="XsH-kM-Rdg" secondAttribute="centerY" id="6MB-da-Pjw"/>
+                        <constraint firstItem="adf-I0-rVE" firstAttribute="centerX" secondItem="XsH-kM-Rdg" secondAttribute="centerX" id="MoP-5N-bGU"/>
+                        <constraint firstAttribute="height" constant="40" id="dud-qr-FmD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="XsH-kM-Rdg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0KF-HT-I3m"/>
+                <constraint firstItem="LLC-vl-nmv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="36V-bK-fb3"/>
+                <constraint firstItem="ISY-Be-Owe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Wa2-xI-Lhi"/>
+                <constraint firstItem="LLC-vl-nmv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="bbB-xi-VYS"/>
+                <constraint firstItem="ISY-Be-Owe" firstAttribute="top" secondItem="YeJ-zU-iAb" secondAttribute="bottom" constant="10" id="eGw-2L-zuN"/>
+                <constraint firstAttribute="trailing" secondItem="YeJ-zU-iAb" secondAttribute="trailing" id="fjC-gz-Y5B"/>
+                <constraint firstItem="XsH-kM-Rdg" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="lqE-9P-HUG"/>
+                <constraint firstItem="YeJ-zU-iAb" firstAttribute="top" secondItem="LLC-vl-nmv" secondAttribute="bottom" constant="30" id="o1Q-yq-TpX"/>
+                <constraint firstItem="LLC-vl-nmv" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="plc-Wj-Ytl"/>
+                <constraint firstItem="YeJ-zU-iAb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="uqD-0n-oiA"/>
+                <constraint firstItem="XsH-kM-Rdg" firstAttribute="top" secondItem="ISY-Be-Owe" secondAttribute="bottom" constant="30" id="v2F-xl-1Wo"/>
+                <constraint firstItem="ISY-Be-Owe" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ywe-fX-Qd4"/>
+            </constraints>
+            <point key="canvasLocation" x="-1.4925373134328357" y="-0.68649885583524017"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backbtn" width="170.66667175292969" height="170.66667175292969"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

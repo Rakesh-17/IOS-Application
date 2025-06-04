@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBXWQq24s1e0AsTM_YkuVP7bV-E9bcpT8c</string>
+	<key>BUNDLE_ID</key>
+	<string>com.blur.socialintegration</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.googleusercontent.apps.420186562501-h3eftb3141emgsg2kqikh1ni15l5e04e</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.420186562501-h3eftb3141emgsg2kqikh1ni15l5e04e</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>app-1-396899716624-ios-0c909991ebb09aa55c4495 </string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>app-1-396899716624-ios-0c909991ebb09aa55c4495</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>1877298599470889</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>1877298599470889</string>
+			</array>
+		</dict>
+	</array>
+	<key>CLIENT_ID</key>
+	<string>420186562501-h3eftb3141emgsg2kqikh1ni15l5e04e.apps.googleusercontent.com</string>
+	<key>GCM_SENDER_ID</key>
+	<string>396899716624</string>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:396899716624:ios:0c909991ebb09aa55c4495</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>PROJECT_ID</key>
+	<string>socialintegration-bd3ae</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.420186562501-h3eftb3141emgsg2kqikh1ni15l5e04e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>socialintegration-bd3ae.firebasestorage.app</string>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>
