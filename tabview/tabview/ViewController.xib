@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="tabview" customModuleProvider="target">
+            <connections>
+                <outlet property="tabbar" destination="oPE-mr-h6Q" id="qzV-7J-wV5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oPE-mr-h6Q">
+                    <rect key="frame" x="0.0" y="769" width="393" height="49"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <items>
+                        <tabBarItem systemItem="favorites" id="X5T-t6-j2h"/>
+                        <tabBarItem systemItem="more" id="cjr-kl-Gmj"/>
+                    </items>
+                </tabBar>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="oPE-mr-h6Q" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="710" id="3UP-FN-kyC"/>
+                <constraint firstItem="oPE-mr-h6Q" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="FQw-ey-4TH"/>
+                <constraint firstItem="oPE-mr-h6Q" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="JVX-pW-3HG"/>
+                <constraint firstItem="oPE-mr-h6Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zsK-fI-rMy"/>
+            </constraints>
+            <point key="canvasLocation" x="124" y="-27"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
