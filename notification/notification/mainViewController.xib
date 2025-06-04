@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_3" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="mainViewController" customModule="notification" customModuleProvider="target">
+            <connections>
+                <outlet property="notilabel" destination="NQ0-IO-2HF" id="Kez-Ei-67Q"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminder!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htM-Gf-Iyi">
+                    <rect key="frame" x="128" y="171" width="156" height="35"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dxT-iP-5hl">
+                    <rect key="frame" x="117" y="337" width="167" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="Add New Task"/>
+                    <connections>
+                        <action selector="Addtask:" destination="-1" eventType="touchUpInside" id="wVJ-eR-3NJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DM-yb-b81">
+                    <rect key="frame" x="118" y="431" width="167" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="gray" title="Older Notification"/>
+                    <connections>
+                        <action selector="Oldernoti:" destination="-1" eventType="touchUpInside" id="XDe-8f-8cx"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latest Notification :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9q-fs-Z0P">
+                    <rect key="frame" x="50" y="586" width="148" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQ0-IO-2HF">
+                    <rect key="frame" x="208" y="586" width="184" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="1" green="0.70321910115301578" blue="0.74932746526780147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7DM-yb-b81" secondAttribute="trailing" constant="117" id="3bI-4r-1zo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Z9q-fs-Z0P" secondAttribute="trailing" constant="204" id="4uo-xw-lKj"/>
+                <constraint firstItem="7DM-yb-b81" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="118" id="7tK-oW-aZr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NQ0-IO-2HF" secondAttribute="trailing" constant="10" id="BrE-WQ-AKJ"/>
+                <constraint firstItem="Z9q-fs-Z0P" firstAttribute="top" secondItem="7DM-yb-b81" secondAttribute="bottom" constant="120" id="D9Q-ms-pnO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="htM-Gf-Iyi" secondAttribute="trailing" constant="118" id="Jl3-Kb-BDO"/>
+                <constraint firstItem="NQ0-IO-2HF" firstAttribute="top" secondItem="7DM-yb-b81" secondAttribute="bottom" constant="120" id="Mfs-3R-fNd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="7DM-yb-b81" secondAttribute="bottom" constant="374" id="Oef-Ty-Ajx"/>
+                <constraint firstItem="dxT-iP-5hl" firstAttribute="top" secondItem="htM-Gf-Iyi" secondAttribute="bottom" constant="131" id="Ovo-AF-JOP"/>
+                <constraint firstItem="Z9q-fs-Z0P" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="RIm-ql-ZlL"/>
+                <constraint firstItem="NQ0-IO-2HF" firstAttribute="leading" secondItem="Z9q-fs-Z0P" secondAttribute="trailing" constant="10" id="SWw-Ot-Zox"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dxT-iP-5hl" secondAttribute="bottom" constant="468" id="cmV-ec-CWV"/>
+                <constraint firstItem="htM-Gf-Iyi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="128" id="dBc-Z1-xnr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dxT-iP-5hl" secondAttribute="trailing" constant="118" id="gtr-px-7dg"/>
+                <constraint firstItem="dxT-iP-5hl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="117" id="gwd-Z2-43G"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Z9q-fs-Z0P" secondAttribute="bottom" constant="233" id="h3Y-tL-2CV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="NQ0-IO-2HF" secondAttribute="bottom" constant="233" id="k7r-ar-b55"/>
+                <constraint firstItem="7DM-yb-b81" firstAttribute="top" secondItem="dxT-iP-5hl" secondAttribute="bottom" constant="59" id="kp9-M4-McL"/>
+            </constraints>
+            <point key="canvasLocation" x="80.597014925373131" y="-11.670480549199084"/>
+        </view>
+    </objects>
+</document>
